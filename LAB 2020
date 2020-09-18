@@ -1,0 +1,32 @@
+//*******************************************************************
+// Assign2Test
+// This class contains the main method for CS-176L Assignment 2
+//*******************************************************************
+public class Assign2Test {
+
+	public static void main(String[] args) {
+
+		Student aj = new Student("Abdulmuhsin J. Al-Kandari", "s0936669@monmouth.edu", "SE");
+		Student justin = new Student("Justin R. Schlemm", "s0898474@monmouth.edu", "SE");
+		Student mary = new Student("Mary F. Menges", "s1012284@monmouth.edu", "SE");
+		Student nick = new Student("Nicholas-Jason R. Roache", "s0906695@monmouth.edu", "CS");
+		Student taylor = new Student("Taylor J. Klodowski", "s0912276@monmouth.edu", "SE");	
+		Student veronica = new Student("Veronica M. Granite", "s1068680@monmouth.edu", "CS");
+		Student micah = new Student("Micah A. Wood", "s1377608@monmouth.edu", "CS");
+		Student jalen = new Student("Jalen M. Jones", "s1013562@monmouth.edu", "SE");
+		Student naeem = new Student("Naeem K. Green", "s1275669@monmouth.edu", "CS");
+		Student azeez = new Student("Azeez A. Adedokun", "s0898446@monmouth.edu", "SE");
+
+		Student[] studentArray = {aj, justin, mary, nick, taylor, veronica, micah, jalen, naeem, azeez};
+		StudentList myStudentList = new StudentList(studentArray);
+//		Email[] studentEmail = {s0936669@monmouth.edu, s0898474@monmouth.edu, s1012284@monmouth.edu
+		
+		System.out.println("Total Studnets in CS: " + myStudentList.studentCount("CS"));
+		System.out.println("Total Studnets in SE: " + myStudentList.studentCount("SE"));
+		System.out.println("Total Studnets in HIS: " + myStudentList.studentCount("HIS"));
+		System.out.print("Total Students with Emails:  " + myStudentList.studentInfo("email"));
+ 		
+		
+//	}
+	}
+}
